@@ -1,0 +1,37 @@
+show dbs 
+
+show collections 
+
+db.employees.insertOne({ 
+    emp_id: 101, 
+    name: "Alice", 
+    age: 30, 
+    department: "HR", 
+    salary: 50000 
+})
+
+db.employees.insertMany([ 
+    { emp_id: 102, name: "Bob", age: 28, department: "Engineering", salary: 60000 }, 
+    { emp_id: 103, name: "Charlie", age: 35, department: "Sales", salary: 55000 }, 
+    { emp_id: 104, name: "Diana", age: 26, department: "Engineering", salary: 62000 } 
+]) 
+
+db.employees.find()
+
+db.employees.find({ department: "Engineering" }) 
+
+db.employees.findOne({ emp_id: 102 }) 
+
+db.employees.updateOne( 
+    { emp_id: 101 }, 
+    { $set: { salary: 52000 } } 
+)
+
+db.employees.updateMany( 
+    { department: "Engineering" }, 
+    { $inc: { salary: 2000 } } 
+)
+
+db.employees.deleteOne({ emp_id: 103 })
+
+db.employees.deleteMany({ department: "Sales" }) 
