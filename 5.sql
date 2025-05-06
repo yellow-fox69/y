@@ -7,11 +7,11 @@ Salary DECIMAL(10, 2)
 
 INSERT INTO Employee (E_id, E_name, Age, Salary)
 VALUES
-(1, 39,"Shankar",9, 30, 50000.00),
-(2, 39,"Rahul",39, 25, 45000.00),
-(3, 39,"Muskaan",39, 35, 62000.00),
-(4, 39,"Mathew",39;, 28, 52000.00),
-(5, 39,"Raj", 32, 58000.00);
+(1, "Shankar", 30, 50000.00),
+(2, "Rahul", 25, 45000.00),
+(3, "Muskaan", 35, 62000.00),
+(4, "Mathew", 28, 52000.00),
+(5, "Raj", 32, 58000.00);
 
 DELIMITER //
 
