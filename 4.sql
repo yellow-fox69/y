@@ -49,7 +49,7 @@ CONCAT('salary difference after
 update is ', NEW.SALARY - OLD.SALARY);
 END;//
 
-DELIMITER;
+DELIMITER ;
 
 UPDATE CUSTOMER
 SET SALARY = 55000.00
